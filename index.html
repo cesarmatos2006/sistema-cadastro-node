@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+        <meta charset="UTF-8">
+        <title>formulario</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <form>
+            <fieldset class="Pessoais">
+                <legend>Dados Pessoais</legend> 
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="senha">Senha: </label>
+                    <input type="password" id="senha" name="senha" required>
+                    <label for="website">Website: </label>
+                    <input type="url" id="website" name="website">
+                    <label for="dataNascimento">Data de Nascimento: </label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                    <label for="mes">Mês de Referência: </label>
+                    <input type="month" id="mes" name="mes">
+                    <label for="semana">Semana: </label>
+                    <input type="week" id="semana" name="semana">
+                    <label for="hora">Horário: </label>
+                    <input type="time" id="hora" name="hora">
+                    <label for="dataHora">Data e Hora: </label>
+                    <input type="datetime-local" id="dataHora" name="dataHora">
+            </fieldset>
+            <fieldset class="Preferencia">
+                <legend>Preferência</legend>
+                    <fieldset>
+                        <legend>Sexo: </legend>
+                        <div class="opcao">
+                        <input type="radio" id="Masculino" value="Masculino" name="sexo" required>
+                        <label for="Masculino">Masculino</label>
+                        </div>
+                        <div class="opcao">
+                        <input type="radio" id="Feminino" value="Feminino" name="sexo">
+                        <label for="Feminino">Feminino</label>
+                        </div>
+                    </fieldset>
+                    <label for="interesse">Interesses: </label>
+                    <div class="opcao">
+                    <input type="checkbox" value="Tecnologia" id="tecnologia" name="interesse[]">
+                    <label for="tecnologia">Tecnologia</label>
+                    </div>
+                    <div class="opcao">
+                    <input type="checkbox" value="Esportes" id="esporte" name="interesse[]">
+                    <label for="esporte">Esportes</label>
+                    </div>
+                    <div class="opcao">
+                    <input type="checkbox" value="Educacao" id="educacao" name="interesse[]">
+                    <label for="educacao">Educação</label>
+                    </div>
+                    <label for="estado">Estado: </label>
+                    <select id="estado" name="estado" required>
+                        <option value="" disabled selected>Selecione um estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select><br>
+                    <label for="observacoes">Observações: </label>
+                    <textarea id="observacoes" name="observacoes" rows="10" cols="25"></textarea>
+            </fieldset>
+            <fieldset class="Complementar">
+                <legend>Informações Complementares</legend>
+                    <label for="quantidade">Quantidade: </label>
+                    <input type="number" id="quantidade" name="quantidade">
+                    <label for="satisfacao">Nivel de Satisfação: </label>
+                    <input type="range" id="satisfacao" name="satisfacao">
+                    <label for="cor">Escolha uma Cor: </label>
+                    <input type="color" id="cor" name="cor">
+            </fieldset>
+            <h4>Plano Escolhido</h4>
+            <table>
+                <tr>
+                    <th>Plano</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <td>Basico</td>
+                    <td>Acesso limitado</td>
+                    <td>R$50,00</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>Acesso completo</td>
+                    <td>R$150,00</td>
+                </tr>
+            </table>
+            <h4>Instruções</h4>
+            <ul>
+                <li>Preencha todos os campos obrigatórios</li>
+                <li>Revise os dados antes de enviar</li>
+                <li>Use o botão Reset para limpar o formulário</li>
+            </ul>
+            <ol>
+                <li>Preencha dados</li>
+                <li>Selecionar Prefêrencias</li>
+                <li>Enviar formulário</li>
+            </ol>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+       </form>
+    </body>
+</html>
